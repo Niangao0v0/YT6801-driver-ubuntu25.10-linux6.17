@@ -39,7 +39,7 @@ YT6801官网驱动在ubuntu25.10编译安装会遇到报错，可能与linux6.17
 
 from_timer()似乎已被新内核弃用，可能应调用timer_container_of()
 
-container_of()位于/usr/src/linux-headers-6.17.0-5-generic/include/linux/timer.h中
+timer_container_of()位于/usr/src/linux-headers-6.17.0-5-generic/include/linux/timer.h中
 
 3.第358行
 
