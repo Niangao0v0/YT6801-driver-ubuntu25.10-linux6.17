@@ -15,6 +15,7 @@ YT6801官网驱动在ubuntu25.10编译安装会遇到报错，可能与linux6.17
 下载yt6801-linux-driver-1.0.31.zip
 
 将该仓库提供的fuxi-gmac-phy.c等文件替换掉官方驱动中的相关文件
+文件在此：https://github.com/Niangao0v0/YT6801-driver-ubuntu25.10-linux6.17/releases/tag/Update
 
 确保编译依赖都已经安装，应该就能编译成功。
 
@@ -30,27 +31,19 @@ YT6801官网驱动在ubuntu25.10编译安装会遇到报错，可能与linux6.17
 
 针对fuxi-gmac-phy.c的修改说明：
 
-1.第318行
-
-<linux/viersion.h>头文件位置变更。
-
-新的目录为 /usr/src/linux-headers-6.17.0-5-generic/include/generated/uapi/linux/version.h
-
-如有需要，你可修改YT6801驱动附带的fuxi-os.h头文件（如果你希望兼容全部linux版本的话）
-
-2.第328行
+1.第328行
 
 from_timer()似乎已被新内核弃用，可能应调用timer_container_of()
 
 timer_container_of()位于/usr/src/linux-headers-6.17.0-5-generic/include/linux/timer.h中
 
-3.第358行
+2.第356行
 
 init_timer_key()似乎已被其用，可能应当调用timer_setup()
 
 timer_setup()位于/usr/src/linux-headers-6.17.0-5-generic/include/linux/timer.h中
 
-4.第377行
+3.第373行
 
 del_timer_sync()可能已被弃用，可能需要调用timer_shutdown_sync()
 
