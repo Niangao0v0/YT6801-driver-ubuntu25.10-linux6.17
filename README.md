@@ -10,13 +10,11 @@ YT6801官网驱动在ubuntu25.10编译安装会遇到报错，可能与linux6.17
 
 替换步骤：
 
-1.前往https://www.motor-comm.com/product/ethernet-control-chip
+1.前往[https://www.motor-comm.com/product/ethernet-control-chip
+](https://www.motor-comm.com/cn/index/pageview/kw/yt6801/catid/55/wd/1/tp/1/p/1.html)
+下载yt6801-linux-driver-1.0.31.zip
 
-下载yt6801-linux-driver-1.0.30.zip
-
-此时尝试按照.zip内的readme编译安装。如果你正在使用ubuntu25.10(linux6.17)或以上（可能，未来），你可能会遇到针对fuxi-gmac-phy.c的报错。
-
-此时将该仓库提供的fuxi-gmac-phy.c替换掉官方驱动/src/fuxi-gmac-phy.c
+将该仓库提供的fuxi-gmac-phy.c等文件替换掉官方驱动中的相关文件
 
 确保编译依赖都已经安装，应该就能编译成功。
 
