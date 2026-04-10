@@ -20,7 +20,7 @@ YT6801 官网驱动在 Ubuntu 25.10 编译安装时会遇到报错，与 Linux 6
 ## 替换步骤
 
 1. **下载官方驱动**  
-   前往 [MotorComm 官网](https://www.motor-comm.com/cn/index/pageview/kw/yt6801/catid/55/wd/1/tp/1/p/1.html](https://www.motor-comm.com/download?kw=&category=744&wd=1&tp=1) 下载  
+   前往[ [MotorComm 官网](https://www.motor-comm.com/cn/index/pageview/kw/yt6801/catid/55/wd/1/tp/1/p/1.html](https://www.motor-comm.com/download?kw=&category=744&wd=1&tp=1)] 下载  
    `yt6801-linux-driver-1.0.31.zip`
 
 2. **解压**
